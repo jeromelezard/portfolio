@@ -2,8 +2,8 @@ import { useRef } from "react";
 import "./App.css";
 import Arrow from "./Components/Arrow";
 import Hero from "./Components/Hero";
-import Navbar from "./Components/Navbar";
 import TimelineSection from "./Components/TimelineSection";
+import Footer from "./Components/Footer";
 
 function App() {
     const timeLineRef = useRef<HTMLDivElement>(null);
@@ -12,10 +12,11 @@ function App() {
     }
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Hero />
             <Arrow scrollToTimeline={scrollToTimeline} />
             <TimelineSection ref={timeLineRef} />
+            <Footer />
         </>
     );
 }

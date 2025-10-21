@@ -3,6 +3,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "../App.css";
 import LinkIcon from "./LinkIcon";
 import CopyEmailButton from "./CopyEmailButton";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
+import { Tooltip } from "./ui/tooltip";
 export default function Hero() {
     return (
         <div className="w-screen h-screen bg-[#495782]">
@@ -21,6 +23,9 @@ export default function Hero() {
                             <LinkIcon icon={faLinkedin} />
 
                             <CopyEmailButton />
+                            <Tooltip text="CV">
+                                <LinkIcon icon={faFile} />
+                            </Tooltip>
                         </div>
                     </div>
                 </div>
